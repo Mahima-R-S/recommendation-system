@@ -3,7 +3,6 @@ import pytest
 
 from src.recommender.engine import Recommendation, Recommender
 
-
 # ── Sample data fixture ───────────────────────────────────────────────────────
 # A fixture is reusable test data. pytest injects it automatically
 # into any test function that has a matching parameter name.

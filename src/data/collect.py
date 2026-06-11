@@ -1,13 +1,14 @@
 import argparse
-import time
 import os
-import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
+import time
+
 import pandas as pd
-from tqdm import tqdm
-from dotenv import load_dotenv
+import requests
 import urllib3
+from dotenv import load_dotenv
+from requests.adapters import HTTPAdapter
+from tqdm import tqdm
+from urllib3.util.retry import Retry
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -111,7 +112,7 @@ def parse_tv(item: dict, genres: dict) -> dict:
 
 
 def collect(api_key: str, pages: int = 250, output: str = "data/movies.csv"):
-    print(f"Fetching genre map...")
+    print("Fetching genre map...")
     genres = get_genres(api_key)
 
     records = []

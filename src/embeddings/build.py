@@ -10,7 +10,7 @@ MODEL_NAME = "all-MiniLM-L6-v2"
 
 
 def build_text_description(row: pd.Series) -> str:
-    
+
     parts = []
 
     title = row.get("title", "")

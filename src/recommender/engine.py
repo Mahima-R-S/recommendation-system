@@ -65,7 +65,7 @@ class Recommender:
         return vec.astype(np.float32)
 
     def _explain(self, query: str, row: pd.Series, score: float) -> str:
-     
+
 
     # Split query into meaningful phrases
     # We split on "but", "and", "like", "," — common connectors in mood queries

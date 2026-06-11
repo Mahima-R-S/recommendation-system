@@ -1,5 +1,7 @@
 import os
+
 import streamlit as st
+
 from src.recommender.engine import get_recommender
 
 st.set_page_config(page_title="MoodMatch", page_icon="🎬", layout="centered")
